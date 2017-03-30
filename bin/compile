@@ -44,7 +44,9 @@ apt-get $APT_OPTIONS update | indent
 
 for PACKAGE in $(cat $BUILD_DIR/Aptfile); do
   if [[ $PACKAGE == *.sh ]]; then
-    ./$BUILD_DIR/$PACKAGE
+    echo "Attempting to run $PACKAGE in $BUILD_DIR"
+    $BUILD_DIR/$PACKAGE
+    echo "Done running $PACKAGE"
   elif [[ $PACKAGE == *deb ]]; then
     PACKAGE_NAME=$(basename $PACKAGE .deb)
     PACKAGE_FILE=$APT_CACHE_DIR/archives/$PACKAGE_NAME.deb
