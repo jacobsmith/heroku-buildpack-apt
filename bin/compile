@@ -7,7 +7,7 @@ echo "This is jacob!"
 set -e
 
 # debug
-# set -x
+set -x
 
 # parse and derive params
 BUILD_DIR=$1
