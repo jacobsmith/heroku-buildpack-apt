@@ -2,6 +2,22 @@
 # bin/compile <build-dir> <cache-dir>
 
 echo "Utilizing the InstrumentalD Buildpack"
+echo
+echo "This also requires the use of the Ruby Buildback to install the necessary instrumental-agent gem"
+echo
+echo
+echo "#Gemfile"
+echo 'source "https://rubygems.org"'
+echo 'ruby "~> 2.3.0"'
+echo
+echo 'gem "instrumental_agent"'
+echo 'gem "pidly"'
+echo 'gem "toml"'
+echo
+echo
+echo "Additionally, you will need to invoke ~/.apt/opt/instrumentald/lib/app/bin/instrumentald"
+echo "you can pass in a valid .toml config file via '-c instrumentald_config.toml'
+
 
 # fail fast
 set -e
