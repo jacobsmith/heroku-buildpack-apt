@@ -16,7 +16,7 @@ echo 'gem "toml"'
 echo
 echo
 echo "Additionally, you will need to invoke ~/.apt/opt/instrumentald/lib/app/bin/instrumentald"
-echo "you can pass in a valid .toml config file via '-c instrumentald_config.toml'
+echo "you can pass in a valid .toml config file via '-c instrumentald_config.toml'"
 
 
 # fail fast
