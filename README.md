@@ -1,4 +1,8 @@
-# heroku-buildpack-apt [![Build Status](https://travis-ci.org/heroku/heroku-buildpack-apt.svg?branch=master)](https://travis-ci.org/heroku/heroku-buildpack-apt)
+# heroku-buildpack-apt
+
+This buildpack is designed to automatically download and install version `instrumentald_1.0.2_i386.deb` of the InstrumentalD library. It will also require installing the `instrumental_agent` ruby gem and launching the `instrumentald` executable manually - available at ` ~/.apt/opt/instrumentald/lib/app/bin/instrumentald`.
+
+# Built upon `heroku-buildpack-apt`
 
 Add support for apt-based dependencies during both compile and runtime.
 
