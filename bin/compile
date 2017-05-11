@@ -90,7 +90,7 @@ done
 
 # THIS IS WHERE WE INSTALL INSTRUMENTAL D
 # Follow redirects, install the instrumentald package
-curl -L -v https://packagecloud.io/expectedbehavior/instrumental/packages/ubuntu/trusty/instrumentald_1.0.2_i386.deb/download -o $APT_CACHE_DIR/archives/output.deb
+curl -L -v https://packagecloud.io/expectedbehavior/instrumental/packages/ubuntu/trusty/instrumentald_1.0.4_i386.deb/download -o $APT_CACHE_DIR/archives/output.deb
 dpkg -x $APT_CACHE_DIR/archives/output.deb $BUILD_DIR/.apt/
 
 topic "Writing profile script"
